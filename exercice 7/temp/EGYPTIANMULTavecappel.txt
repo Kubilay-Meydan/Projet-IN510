@@ -8,10 +8,10 @@ q0,1,_,_,>,-,-
 q0,0,_,_
 q0,0,_,_,>,-,-
 
-q0,*,_,_
+q0,#,_,_
 qwritey,_,_,_,>,-,-
 
-q0,#,_,_
+q0,/,_,_
 qright,0,_,_,>,-,-
 
 qwritey,0,_,_
@@ -32,7 +32,7 @@ qsep,1,_,_,<,-,-
 check,_,_,_
 check,_,_,_,<,-,-
 
-check,*,_,_
+check,#,_,_
 qaccept,_,_,_,-,-,-
 
 qsep,0,_,_
@@ -44,19 +44,19 @@ qsep,1,_,_,<,-,-
 qsep,_,_,_
 qrightsep,_,_,_,>,-,-
 
-qsep,#,_,_
-qchange,#,_,_,<,-,-
+qsep,/,_,_
+qchange,/,_,_,<,-,-
 
 qchange,0,_,_
-q0,#,_,_,>,-,-
+q0,/,_,_,>,-,-
 
 qchange,1,_,_
-qinter,#,_,_,>,-,-
+qinter,/,_,_,>,-,-
 
 qchange,_,_,_
 qaccept,_,_,_,<,-,-
 
-qinter,#,_,_
+qinter,/,_,_
 qright,1,_,_,>,-,-
 
 qinter,_,_,_
@@ -68,8 +68,8 @@ qright,0,_,_,>,-,-
 qright,1,_,_
 qright,1,_,_,>,-,-
 
-qright,#,_,_
-qright,#,_,_,>,-,-
+qright,/,_,_
+qright,/,_,_,>,-,-
 
 qright,_,_,_
 qlink,_,_,_,-,-,-
@@ -87,7 +87,7 @@ qdivise,0,_,_
 qmulty,_,_,_,-,-,-
 
 qdivise,1,_,_
-qinter,#,_,_,>,-,-
+qinter,/,_,_,>,-,-
 
 qmulty,_,_,_
 check,_,0,_,-,>,-
