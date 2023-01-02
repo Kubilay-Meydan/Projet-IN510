@@ -1,0 +1,27 @@
+//-------CONFIGURATION
+name: LEFT(i)
+init: q0
+accept: qaccept
+
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+q0,0
+q1,0,>
+
+q0,1
+q1,1 ,>
+
+q0,_
+qaccept,_,<
+
+q1,0
+q1,0,>
+
+q1,1
+q1,1,>
+
+q1,_
+qaccept,_,<

@@ -1,0 +1,36 @@
+//-------CONFIGURATION
+name: COPY i,j
+init: q0
+accept: qaccept
+
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+q0,0,_
+q0,0,0,>,>
+
+q0,0,0
+q0,0,0,>,>
+
+q0,0,1
+q0,0,0,>,>
+
+q0,1,_
+q0,1,1,>,>
+
+q0,1,0
+q0,1,1,>,>
+
+q0,1,1
+q0,1,1,>,>
+
+q0,_,1
+q0,_,_,>,>
+
+q0,_,0
+q0,_,_,>,>
+
+q0,_,_
+qaccept,_,_,-,-

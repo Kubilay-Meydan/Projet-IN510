@@ -1,0 +1,15 @@
+//-------CONFIGURATION
+name: SEARCH(i,a)
+init: q0
+accept: qaccept
+
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+q0,0
+qaccept,0,-
+
+q0,1
+qaccept,1,-

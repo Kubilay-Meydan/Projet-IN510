@@ -1,0 +1,18 @@
+//-------CONFIGURATION
+name: ERASEi
+init: q0
+accept: qaccept
+
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+q0,0
+q0,_,>
+
+q0,1
+q0,_,>
+
+q0,_
+qaccept,_ ,- 
