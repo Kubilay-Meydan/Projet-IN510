@@ -1,0 +1,99 @@
+init: qlink
+accept: qmulty
+
+//partie addition (etat qlink permet d'aller dans un etat qaddition)
+
+qlink,_,_,_
+qaddition,_,_,_,-,<,<
+
+qaddition,_,0,0
+qaddition,_,0,0,-,<,<
+
+qaddition,_,0,1
+qaddition,_,0,1,-,<,<
+
+qaddition,_,1,0
+qaddition,_,1,1,-,<,<
+
+//etat qadditionretenu permet de conserver la retenu et la rajouter apres 
+
+qaddition,_,1,1
+qadditionretenu,_,1,0,-,<,<
+
+//multiplication de y par 2
+
+qaddition,_,_,0
+qmultyaddition,_,_,0,-,-,-
+
+qaddition,_,_,1
+qmultyaddition,_,_,1,-,-,-
+
+qaddition,_,0,_
+qaddition,_,0,0,-,<,<
+
+qaddition,_,1,_
+qaddition,_,1,1,-,<,<
+
+qaddition,_,_,_
+qright2,_,_,_,-,>,>
+
+//etat qadditionretenu permet de conserver la retenu et la rajouter apres 
+
+qadditionretenu,_,0,0
+qaddition,_,0,1,-,<,<
+
+qadditionretenu,_,0,1
+qadditionretenu,_,0,0,-,<,<
+
+qadditionretenu,_,1,0
+qadditionretenu,_,1,0,-,<,<
+
+qadditionretenu,_,1,1
+qadditionretenu,_,1,1,-,<,<
+
+//etat qmulty permet de multiplier y par 2 ensuite, puis de 
+//sortir de la machine addition pour revenir à la premiere machine
+
+qadditionretenu,_,_,0
+qmulty,_,_,1,-,-,-
+
+qadditionretenu,_,_,1
+qadditionretenu,_,_,0,-,-,<
+
+qadditionretenu,_,0,_
+qadditionretenu,_,0,1,-,<,<
+
+qadditionretenu,_,1,_
+qadditionretenu,_,1,0,-,<,<
+
+//etat qright2 est le second etat permettant d aller au bout du mot 
+
+qadditionretenu,_,_,_
+qright2,_,_,1,-,>,-
+
+qright2,_,0,0
+qright2,_,0,0,-,>,>
+
+qright2,_,0,1
+qright2,_,0,1,-,>,>
+
+qright2,_,1,0
+qright2,_,1,0,-,>,>
+
+qright2,_,1,1
+qright2,_,1,1,-,>,>
+
+qright2,_,_,0
+qright2,_,_,0,-,-,>
+
+qright2,_,_,1
+qright2,_,_,1,-,-,>
+
+qright2,_,0,_
+qright2,_,0,_,-,>,-
+
+qright2,_,1,_
+qright2,_,1,_,-,>,-
+
+qright2,_,_,_
+qmulty,_,_,_,-,-,-
