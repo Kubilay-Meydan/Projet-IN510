@@ -1,0 +1,4 @@
+La MT faisant appel à 4 autres MT, le programme python ne peut pas les combiner en 1 machine sans appel d'un coup.
+
+Une version sans appel où tous les appels sont remplacés par les MT appèles est néanmoins disponible.
+Une version avec 1 appel est aussi disponible pour montrer que la fonction linker marche sur notre machine tri.

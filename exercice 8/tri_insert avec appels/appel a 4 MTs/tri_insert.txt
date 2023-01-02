@@ -1,0 +1,14 @@
+init: Q00
+accept: Q0F
+
+Q00,1,_
+Q00,1,_,-,-
+
+Q00,0,_
+Q00,0,_,-,-
+
+link: Q00,0,_,A00.txt,Q01
+link: Q00,1,_,A00.txt,Q01
+link: Q01,_,_,B01.txt,Q01
+link: Q02,_,_,C10.txt,Q03
+link: Q03,_,_,D11.txt,Q0F

@@ -1,0 +1,14 @@
+init: S_init
+accept: S_accept
+
+S_init,_,_
+S_etape,_,_,>,-
+
+S_etape,x,_
+S_etape,_,_,>,-
+
+S_etape,s,_
+S_etape,_,_,>,-
+
+S_etape,_,_
+S_accept,_,_,-,-
