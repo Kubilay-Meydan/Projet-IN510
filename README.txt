@@ -24,7 +24,7 @@ Ensuite, pour définir un état accept, on écrit "accept: (Lorem ipsum)".
 Puis, nous pouvons définir des appels (ou links) avec cette syntaxe:
 "link: q1,_,machine2.txt,q2"
 Plusieurs appels peuvent êtres définis.
-Les commentaires sont autorisés, tant qu'ils commencent par un // et ne contiennent pas de  ' (peut causer des bugs parfois donc à eviter).
+Les commentaires sont à eviter, s'il y en a, ils doivent commencer par un // et ne pas contienir de  '.
 Pour le reste, la structure des transitions est la même.
 
 Nous avons inclus un fichier exemple_syth.txt comme exemple de fichier respectant la syntaxe. 
