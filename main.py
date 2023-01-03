@@ -248,6 +248,9 @@ def linker(machine1, machine2):
     trs_m2 = (m2.transitions[0])
     I_m2 = m2.etat_courant[0]
     F_m2 = m2.etat_final[0]
+    if L_m1 == []:
+        print("Il n'y a pas de link dans la machine 1 vers la machine 2")
+        return False 
     with open('linker.txt', 'w') as f:
         init = str("init: " + I_m1 + '\n')
         accept = str("accept: " + F_m1 + '\n')
